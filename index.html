@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            height: 60px;
+            background-color: rgb(36, 120, 120);
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(138, 138, 188);
+            font-size: 1.05rem;
+        }
+
+
+
+        .left {
+            font-size: 1.3rem;
+
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px;
+            align-items: center;
+        }
+
+        .firstSection>Div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(117, 32, 196);
+        }
+
+        #element {
+            color: rgb(117, 32, 196);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+            
+        }
+
+        .secondSection h1 {
+            font-size: 1.6rem;
+        }
+        .box{
+            background:white;
+            width:80vw;
+            height:2px;
+            margin:56px 0;
+            display: flex;
+        }
+        .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 150px;
+        }
+
+        .text-grey {
+            color: grey;
+        }
+        .image-top{
+            width: 70px;
+            position: relative;
+            top: -105px;
+            left: -9px;
+        }
+        .verticaltitle {
+            top: 90px;
+            position: relative;
+            width: 100px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 15px;
+            width: 190px;
+            height: 1rem;
+            color: grey;
+            
+           
+        }
+        main hr {
+            background: blueviolet;
+            border: 0;
+            margin: 40px 60px;
+            height: 1.2px;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+        footer{
+            height: 233px;
+            background-color:#0e0e1a;
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer > div{
+            width: 223px;
+        }
+        .footer ul{
+            list-style: none;
+
+        }
+        .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px;
+
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Lalit's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="https://lalit-2001.github.io/Amazon-clone/my/index.html">Amazon Project</a></li>
+                     <li><a href="https://www.linkedin.com/in/lalitshewale01/">LinkedIn</a></li>
+                    <li> <a href="https://github.com/lalit-2001">Github</a></li>
+                    <li> <a href="https://lalit-2001.github.io/PORTFOLIO/">Home</a></li>
+                    <li> <a href="/">Services</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is
+                <span class="purple">Lalit</span>
+                <div>And I am a passionate </div>
+                <span id="element"></span>
+
+            </div>
+            <div class="rightSection">
+                <img src="header_img.jpg" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey">What I have studied so far</span>
+            <h1>Educational Qualification</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="verticaltitle">M.Sc.(CA)
+                        <div>(2022-2024)</div>
+                    </div>
+                     
+                    <img class="image-top" src="developer.png" alt="">
+                    
+                    <div class="vertical-desc">
+                        Ashoka Center for Bussiness and Computer Studies College,Chandshi,
+                        Nashik   
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="verticaltitle">B.Sc.(CS)
+                        <div>(2018-2021)</div>
+                    </div>
+                     
+                    <img class="image-top" src="developer.png" alt="">
+                    
+                    <div class="vertical-desc">
+                        Ashoka Center for Bussiness and Computer Studies College,Chandshi,
+                        Nashik    
+                    </div>
+                    
+                </div>
+                <div class="vertical">
+                    <div class="verticaltitle">HSC
+                        <div>(2016-2018)</div>
+                    </div>
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-desc">
+                        Karmaveer Shantarambapu Kondaji Wavre College,Cidco,Nashik
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="verticaltitle">SSC
+                        <div>(2015-2016)</div>
+                    </div>
+                     
+                    <img class="image-top" src="developer.png" alt="">
+                    
+                    <div class="vertical-desc">
+                       Vaijanath Jijaji High School Nandgaon, Nashik 
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    
+        <div class="footer-rights">
+            Copyright &#169;lalit'sportfolio.com | All rights reserved 
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer', 'Web Developer'],
+            typeSpeed: 60,
+        });
+    </script>
+</body>
+
+</html>
