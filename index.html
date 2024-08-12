@@ -90,20 +90,22 @@
             max-width: 80vw;
             margin: auto;
             height: 60vh;
-            
+
         }
 
         .secondSection h1 {
             font-size: 1.6rem;
         }
-        .box{
-            background:white;
-            width:80vw;
-            height:2px;
-            margin:56px 0;
+
+        .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
             display: flex;
         }
-        .vertical{
+
+        .vertical {
             height: 93px;
             width: 1px;
             background-color: white;
@@ -113,26 +115,30 @@
         .text-grey {
             color: grey;
         }
-        .image-top{
+
+        .image-top {
             width: 70px;
             position: relative;
             top: -105px;
             left: -9px;
         }
+
         .verticaltitle {
             top: 90px;
             position: relative;
             width: 100px;
         }
-        .vertical-desc{
+
+        .vertical-desc {
             position: relative;
             top: 15px;
             width: 190px;
             height: 1rem;
             color: grey;
-            
-           
+
+
         }
+
         main hr {
             background: blueviolet;
             border: 0;
@@ -144,30 +150,87 @@
             background-color: rgb(0, 0, 33);
             color: white;
         }
-        footer{
+
+        footer {
             height: 233px;
-            background-color:#0e0e1a;
+            background-color: #0e0e1a;
         }
-        .footer{
+
+        .footer {
             display: flex;
             padding: 23px 122px;
             justify-content: space-evenly;
         }
-        .footer > div{
+
+        .footer>div {
             width: 223px;
         }
-        .footer ul{
+
+        .footer ul {
             list-style: none;
 
         }
-        .footer-rights{
+
+        .footer-rights {
             text-align: center;
             color: gray;
             padding: 12px;
 
 
         }
-        
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li:hover>.dropdown {
+            display: block;
+            /* Show the dropdown when hovering over the main project */
+        }
+
+        .dropdown {
+            display: none;
+            /* Hide the dropdown initially */
+            position: absolute;
+            background-color: rgb(36, 120, 120);
+            top: 100%;
+            /* Position the dropdown below the main link */
+            left: 0;
+            width: 200px;
+            /* Adjust width as needed */
+            padding: 10px 0;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown li {
+            width: 100%;
+            margin: 0;
+        }
+
+        .dropdown li a {
+            padding: 10px 20px;
+            display: block;
+            color: white;
+            text-align: left;
+        }
+
+        .dropdown li a:hover {
+            background-color: rgb(138, 138, 188);
+        }
     </style>
 </head>
 
@@ -177,15 +240,34 @@
             <div class="left">Lalit's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li> <a href="https://lalit-2001.github.io/Amazon-clone/my/index.html">Amazon Project</a></li>
-                     <li><a href="https://www.linkedin.com/in/lalitshewale01/">LinkedIn</a></li>
-                    <li> <a href="https://github.com/lalit-2001">Github</a></li>
-                    <li> <a href="https://lalit-2001.github.io/PORTFOLIO/">Home</a></li>
-                    <li> <a href="/">Services</a></li>
+
+                    <li><a href="https://www.linkedin.com/in/lalitshewale01/">LinkedIn</a></li>
+                    <li><a href="https://github.com/lalit-2001">Github</a></li>
+                    <li>
+                        <a href="">Mini Projects</a>
+                        <ul class="dropdown"> <!-- Dropdown menu -->
+                            <li><a href="https://lalit-2001.github.io/Amazon-clone/">Amazon Project</a></li>
+                            <li><a href="https://lalit-2001.github.io/digitalClock/">Digital Clock</a></li>
+                            <li><a href="https://lalit-2001.github.io/counterClock/">Counter Clock</a></li>
+                            <li><a href="https://lalit-2001.github.io/quotesApp/">Quotes App</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Major Projects</a>
+                        <ul class="dropdown"> <!-- Dropdown menu -->
+                            <li><a href="https://github.com/lalit-2001/weatherApp">Weather App</a></li>
+                            <li><a href="https://github.com/lalit-2001/orphangeManagement">Orphanage Management</a></li>
+                            <li><a href="https://github.com/lalit-2001/Parking-Management">Parking Management</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://lalit-2001.github.io/PORTFOLIO/">Home</a></li>
+                    <li><a href="/">Services</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    <!-- The rest of your HTML remains unchanged -->
+
     <main>
         <section class="firstSection">
             <div class="leftSection">
@@ -209,26 +291,26 @@
                     <div class="verticaltitle">M.Sc.(CA)
                         <div>(2022-2024)</div>
                     </div>
-                     
+
                     <img class="image-top" src="developer.png" alt="">
-                    
+
                     <div class="vertical-desc">
                         Ashoka Center for Bussiness and Computer Studies College,Chandshi,
-                        Nashik   
+                        Nashik
                     </div>
                 </div>
                 <div class="vertical">
                     <div class="verticaltitle">B.Sc.(CS)
                         <div>(2018-2021)</div>
                     </div>
-                     
+
                     <img class="image-top" src="developer.png" alt="">
-                    
+
                     <div class="vertical-desc">
                         Ashoka Center for Bussiness and Computer Studies College,Chandshi,
-                        Nashik    
+                        Nashik
                     </div>
-                    
+
                 </div>
                 <div class="vertical">
                     <div class="verticaltitle">HSC
@@ -243,11 +325,11 @@
                     <div class="verticaltitle">SSC
                         <div>(2015-2016)</div>
                     </div>
-                     
+
                     <img class="image-top" src="developer.png" alt="">
-                    
+
                     <div class="vertical-desc">
-                       Vaijanath Jijaji High School Nandgaon, Nashik 
+                        Vaijanath Jijaji High School Nandgaon, Nashik
                     </div>
                 </div>
 
@@ -255,10 +337,10 @@
             </div>
         </section>
     </main>
-    
-        <div class="footer-rights">
-            Copyright &#169;lalit'sportfolio.com | All rights reserved 
-        </div>
+
+    <div class="footer-rights">
+        Copyright &#169;lalit'sportfolio.com | All rights reserved
+    </div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
